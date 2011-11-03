@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/cellspace
+# catalog-date 2009-08-03 16:22:07 +0200
+# catalog-license lppl
+# catalog-version 1.6
 Name:		texlive-cellspace
 Version:	1.6
 Release:	1
@@ -46,6 +52,7 @@ columns.
 %doc %{_texmfdistdir}/doc/latex/cellspace/README
 %doc %{_texmfdistdir}/doc/latex/cellspace/cellspace.pdf
 %doc %{_texmfdistdir}/doc/latex/cellspace/cellspace.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,3 +63,5 @@ columns.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
