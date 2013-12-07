@@ -6,7 +6,7 @@
 # catalog-version 1.6
 Name:		texlive-cellspace
 Version:	1.6
-Release:	3
+Release:	4
 Summary:	Ensure minimal spacing of table cells
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cellspace
