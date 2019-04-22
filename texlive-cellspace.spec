@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version 1.6
 Name:		texlive-cellspace
-Version:	1.7
-Release:	3
+Version:	1.8.1
+Release:	1
 Summary:	Ensure minimal spacing of table cells
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cellspace
