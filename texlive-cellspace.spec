@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/cellspace
-# catalog-date 2009-08-03 16:22:07 +0200
-# catalog-license lppl
-# catalog-version 1.6
 Name:		texlive-cellspace
-Version:	1.8.1
+Version:	61501
 Release:	1
 Summary:	Ensure minimal spacing of table cells
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cellspace
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cellspace.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cellspace.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cellspace.r61501.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cellspace.doc.r61501.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -30,12 +24,12 @@ cellspace only to look at the cells of potentially difficult
 columns.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -46,25 +40,10 @@ columns.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6-2
-+ Revision: 750049
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.6-1
-+ Revision: 718026
-- texlive-cellspace
-- texlive-cellspace
-- texlive-cellspace
-- texlive-cellspace
-- texlive-cellspace
-
