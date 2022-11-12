@@ -5,8 +5,8 @@ Summary:	Ensure minimal spacing of table cells
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cellspace
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cellspace.r61501.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cellspace.doc.r61501.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cellspace.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cellspace.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
