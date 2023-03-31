@@ -1,6 +1,6 @@
 Name:		texlive-cellspace
 Version:	61501
-Release:	1
+Release:	2
 Summary:	Ensure minimal spacing of table cells
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cellspace
