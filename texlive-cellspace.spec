@@ -3,7 +3,7 @@ Version:	61501
 Release:	2
 Summary:	Ensure minimal spacing of table cells
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cellspace
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/cellspace
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cellspace.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cellspace.doc.r%{version}.tar.xz
